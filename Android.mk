@@ -20,6 +20,9 @@ LOCAL_JNI_SHARED_LIBRARIES  := libnfc_jni
 
 LOCAL_PROGUARD_ENABLED := disabled
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 ########################################
@@ -42,6 +45,9 @@ LOCAL_CERTIFICATE := platform
 LOCAL_JNI_SHARED_LIBRARIES := libnfc_nci_jni
 
 LOCAL_PROGUARD_ENABLED := disabled
+
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
 
 include $(BUILD_PACKAGE)
 
